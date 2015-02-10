@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+
+
+    <div id="tsf-container">
+        <!-- begin form -->
+
+        <form id="ticket_form" action="/cbform/email" enctype="application/x-www-form-urlencoded" method="post">
+            <input name="form_name" type="hidden" value="Internal Trade Show Design Team" />
+            <input name="mailto" type="hidden" value="test_it" />
+            <h1>Design Request</h1>
+            <hr>
+
+            <div class="section">
+                <div id="iar">
+                    <label for="iar">Your Name</label>
+                    <input list="iars" name="iar" type="text" user-scalable="0">
+                    <datalist id="iars">
+                        <option value="Bill"></option>
+                        <option value="Danielle"></option>
+                        <option value="Danny"></option>
+                        <option value="Jarrod"></option>
+                        <option value="Katie"></option>
+                        <option value="Kirk"></option>
+                        <option value="Michelle"></option>
+                        <option value="Staci"></option>
+                    </datalist>
+                </div>
+                <!-- end iar -->
+
+
+                <div id="select-trade-show">
+                    <label for="tradeshow">Your Trade Show</label>
+                    <input list="tradeshows" name="tradeshow" type="text">
+                    <datalist id="tradeshows">
+                        <option value="APIC"></option>
+                        <option value="CDA-SF"></option>
+                        <option value="CDA-Anaheim"></option>
+                        <option value="CES"></option>
+                        <option value="CHA"></option>
+                        <option value="CosmoProf"></option>
+                        <option value="CTIA"></option>
+                        <option value="EastPak"></option>
+                        <option value="Fancy Food - Summer"></option>
+                        <option value="Fancy Food - Winter"></option>
+                        <option value="FIME"></option>
+                        <option value="ICAST"></option>
+                        <option value="IDDBA"></option>
+                        <option value="Imaging USA"></option>
+                        <option value="IPI"></option>
+                        <option value="NAMTA"></option>
+                        <option value="Natural Products Expo"></option>
+                        <option value="NSS"></option>
+                        <option value="PACK EXPO"></option>
+                        <option value="PhotoPlus"></option>
+                        <option value="PPAI"></option>
+                        <option value="PSPA/SPAA"></option>
+                        <option value="Sweets and Snacks"></option>
+                        <option value="WCAF"></option>
+                        <option value="WestPak"></option>
+                        <option value="WPPI"></option>
+                        <option value="Fancy Food - Summer"></option>
+                    </datalist>
+                </div>
+
+                <div id="due-date">
+                    <label for="due-date">Design Due Date</label>
+                    <input name="due-date" type="date" />
+                </div>
+                <!-- end select-trade-show -->
+            </div>
+
+
+
+            <!-- start campaign-details -->
+            <div class="section">
+                <h2>Show Special Details</h2>
+                <p>What details need to be printed on each Special Sheet/Sample Pack Label?</p>
+
+                <div class="detail">
+                    <label for="promo-code">Promo Code</label>
+                    <input type="text" name="promo-code" value="" title="Promo Code" />
+                </div>
+
+                <div class="detail">
+                    <label for="promo-code">Percent Off</label>
+                    <input type="text" name="percent-off" value="" title="Percent Off" />
+                </div>
+
+                <div class="detail">
+                    <label for="promo-code">Products</label>
+                    <input type="text" name="percent-off" value="" title="Percent Off" />
+                </div>
+
+                <div class="detail">
+                    <label for="exp-date">Expiration Date</label>
+                    <input type="date" name="exp-date" />
+                </div>
+            </div>
+
+            <!-- end campaign-details -->
+
+
+
+            <div id="deliverables" class="section">
+                <h2>Deliverables</h2>
+                <p>Please fill out each section you will need the design team to produce.</p>
+            </div>
+            
+            <div class="access-section" data-section="sheets-section">
+                <a>Special Sheets</a>
+            </div>
+            
+            <!-- start sheets-sections -->
+            <div id="sheets-section" class="form-section">
+                
+
+
+                <div class="ts-sheets" id="show-sheet-1">
+                    <h4>Special Sheet</h4>
+                    <label for="dimension">Dimensions</label>
+                    <input list="ts-sheets" name="show-sheet" type="text" />
+                    <datalist id="ts-sheets">
+                        <option value="4 x 6 (portrait)"></option>
+                        <option value="4 x 6 (landscape)"></option>
+                        <option value="Inner 3 5/8 x 5 5/8 (portrait)"></option>
+                        <option value="Inner 3 5/8 x 5 5/8 (landscape)"></option>
+                        <option value="5 x 7 (portrait)"></option>
+                        <option value="5 x 7 (landscape)"></option>
+                        <option value="Inner 4 5/8 x 6 5/8 (portrait)"></option>
+                        <option value="Inner 4 5/8 x 6 5/8 (landscape)"></option>
+                    </datalist>
+                    <label for="headline">Headline</label>
+                    <textarea rows="1" type="text" name="headline" title="headline" value="headline"></textarea>
+                    <label for="tagline">Tagline</label>
+                    <textarea rows="1" type="text" name="tagline" title="tagline" value="tagline"></textarea>
+                    <label for="body">Body Text</label>
+                    <textarea rows="3" type="text" name="bodycopy" title="bodycopy" value="bodycopy"></textarea>
+                    <label for="dimension">Product Images (provide sku's)</label>
+                    <textarea rows="3" type="text" name="images" title="images" value="images"></textarea>
+                    <label for="show-sheet">Quantity to Print</label>
+                    <textarea rows="1" type="text" name="amount" title="amount" value="amount"></textarea>
+                </div>
+
+
+                <div class="addForm2 pos-button">
+                    <a class="add">+</a>
+                </div>
+
+
+                <div class="ts-sheets Form2" style="display:none;">
+                    <h4>Additional Sheet</h4>
+                    <label for="dimension">Dimensions</label>
+                    <input list="ts-sheets" name="show-sheet" type="text" />
+                    <datalist id="ts-sheets">
+                        <option value="4 x 6 (portrait)"></option>
+                        <option value="4 x 6 (landscape)"></option>
+                        <option value="Inner 3 5/8 x 5 5/8 (portrait)"></option>
+                        <option value="Inner 3 5/8 x 5 5/8 (landscape)"></option>
+                        <option value="5 x 7 (portrait)"></option>
+                        <option value="5 x 7 (landscape)"></option>
+                        <option value="Inner 4 5/8 x 6 5/8 (portrait)"></option>
+                        <option value="Inner 4 5/8 x 6 5/8 (landscape)"></option>
+                    </datalist>
+                    <label for="headline">Headline</label>
+                    <textarea rows="1" type="text" name="headline" title="headline" value="headline"></textarea>
+                    <label for="tagline">Tagline</label>
+                    <textarea rows="1" type="text" name="tagline" title="tagline" value="tagline"></textarea>
+                    <label for="body">Body Text</label>
+                    <textarea rows="3" type="text" name="bodycopy" title="bodycopy" value="bodycopy"></textarea>
+                    <label for="dimension">Product Images (provide sku's)</label>
+                    <textarea rows="3" type="text" name="images" title="images" value="images"></textarea>
+                    <label for="show-sheet">Quantity to Print</label>
+                    <textarea rows="1" type="text" name="amount" title="amount" value="amount"></textarea>
+                </div>
+                <div style="clear:right;"></div>
+            </div>
+            <!-- end sheets-sections -->
+
+
+            <div class="access-section" data-section="labels-section">
+                <a>Sample Pack Labels</a>
+            </div>
+            <!-- begin labels-section -->
+            <div id="labels-section" class="form-section">
+                
+    
+                <div class="ts-labels" id="label-1">
+                    <h4>Sample Pack Label</h4>
+                    <label for="dimension">Dimensions</label>
+                    <span class="labels-input"><input list="ts-sheets" name="show-sheet" type="text"></span>
+                    <datalist id="ts-sheets">
+                        <option value="4 x 6 (portrait)"></option>
+                        <option value="4 x 6 (landscape)"></option>
+                        <option value="Inner 3 5/8 x 5 5/8 (portrait)"></option>
+                        <option value="Inner 3 5/8 x 5 5/8 (landscape)"></option>
+                        <option value="5 x 7 (portrait)"></option>
+                        <option value="5 x 7 (landscape)"></option>
+                        <option value="Inner 4 5/8 x 6 5/8 (portrait)"></option>
+                        <option value="Inner 4 5/8 x 6 5/8 (landscape)"></option>
+                    </datalist>
+                    <label for="headline">Headline</label>
+                    <textarea rows="1" type="text" name="headline" title="headline" value="headline"></textarea>
+                    <label for="tagline">Tagline</label>
+                    <textarea rows="1" type="text" name="tagline" title="tagline" value="tagline"></textarea>
+                    <label for="body">Body Text</label>
+                    <textarea rows="3" type="text" name="bodycopy" title="bodycopy" value="bodycopy"></textarea>
+                    <label for="dimension">Product Images (provide sku's)</label>
+                    <textarea rows="3" type="text" name="images" title="images" value="images"></textarea>
+                    <label for="show-sheet">Quantity to Print</label>
+                    <textarea rows="1" type="text" name="amount" title="amount" value="amount"></textarea>
+                    <label for="show-sheet">Which products need to go in Sample Packs</label>
+                    <textarea rows="3" type="text" name="images" title="images" value="images"></textarea>
+                </div>
+
+                <div class="addForm2 pos-button">
+                    <a class="add">+</a>
+                </div>
+
+
+                <div class="ts-labels Form2" style="display:none;">
+                    <h4>Additional Label</h4>
+                    <label for="dimension">Dimensions</label>
+                    <input list="ts-sheets" name="show-sheet" type="text">
+                    <datalist id="ts-sheets">
+                        <option value="4 x 6 (portrait)"></option>
+                        <option value="4 x 6 (landscape)"></option>
+                        <option value="Inner 3 5/8 x 5 5/8 (portrait)"></option>
+                        <option value="Inner 3 5/8 x 5 5/8 (landscape)"></option>
+                        <option value="5 x 7 (portrait)"></option>
+                        <option value="5 x 7 (landscape)"></option>
+                        <option value="Inner 4 5/8 x 6 5/8 (portrait)"></option>
+                        <option value="Inner 4 5/8 x 6 5/8 (landscape)"></option>
+                    </datalist>
+                    <label for="headline">Headline</label>
+                    <textarea rows="1" type="text" name="headline" title="headline" value="headline"></textarea>
+                    <label for="tagline">Tagline</label>
+                    <textarea rows="1" type="text" name="tagline" title="tagline" value="tagline"></textarea>
+                    <label for="body">Body Text</label>
+                    <textarea rows="3" type="text" name="bodycopy" title="bodycopy" value="bodycopy"></textarea>
+                    <label for="dimension">Product Images (provide sku's)</label>
+                    <textarea rows="3" type="text" name="images" title="images" value="images"></textarea>
+                    <label for="show-sheet">Quantity to Print</label>
+                    <textarea rows="1" type="text" name="amount" title="amount" value="amount"></textarea>
+                    <label for="show-sheet">Which products need to go in Sample Packs</label>
+                    <textarea rows="3" type="text" name="images" title="images" value="images"></textarea>
+                </div>
+                <div style="clear:right;"></div>
+            </div>
+            <!-- end labels-section -->
+            <div class="access-section" data-section="cubitek-section">
+                <a>Cubitek Signs</a>
+            </div>
+            <!-- begin cubitek-section -->
+            <div id="cubitek-section" class="form-section">
+
+                
+                
+                <div class="ts-cubitek" id="label-1">
+                    <h4>Cubitek Sign</h4>
+                    <label for="dimension">Dimensions</label>
+                    <span class="cubitek-signs-input"><input list="ts-cubitek-signs" name="ts-cubitek-signs" type="text" /></span>
+                    <datalist id="ts-cubitek-signs">
+                        <option value="2 x 15"></option>
+                    </datalist>
+                    <label for="product titles">All Product Titles</label>
+                    <textarea rows="3" type="text" name="images" title="images" value="images"></textarea>
+                    <label for="text color">Text Color</label>
+                    <textarea rows="3" type="text" name="images" title="images" value="images"></textarea>
+                    <label for="background color">Background Color</label>
+                    <textarea rows="3" type="text" name="images" title="images" value="images"></textarea>
+                    <input type="radio" class="foam-board-type" name="Foam Board Type-3" value="foam board" /><span class="rb-text">Foam Board</span>
+                    <input type="radio" class="foam-board-type" name="Foam Board Type-3" value="gator board" /><span class="rb-text">Gator Board</span>
+                </div>
+            </div>
+            <!-- end cubitek-section -->
+
+
+            <div class="access-section" data-section="poster-section">
+                <a>Show Posters</a>
+            </div>
+            <div id="poster-section" class="form-section">
+                
+                <div id="poster-buttons">
+                    <div class="poster-option" id="poster-button-a">
+                        <a>Use Available Poster</a>
+                    </div>
+                    <div class="poster-option" id="poster-button-b">
+                        <a>Design a New Poster</a>
+                    </div>
+                </div>
+                <div id="ap" class="ts-posters" style="display:none;">
+                    <h5>Choose Available Poster</h5>
+                    <label for="avail-poster">Poster</label>
+                    <input list="avail-posters" name="avail-poster" type="text">
+                    <datalist id="avail-posters">
+                        <option value="orange-grey-poster-11x17.pdf"></option>
+                        <option value="4 signs.pdf"></option>
+                        <option value="3 signs.pdf"></option>
+                        <option value="Crystal clear Bags and Boxes posters_for print.pdf"></option>
+                    </datalist>
+                    <div class="addForm2 pos-button">
+                        <a class="add">+</a>
+                    </div>
+
+                    <div class="Form2" style="display:none;">
+                        <label for="avail-poster">Poster</label>
+                        <input list="avail-posters" name="avail-poster" type="text">
+                        <datalist id="avail-posters">
+                            <option value="orange-grey-poster-11x17.pdf"></option>
+                            <option value="4 signs.pdf"></option>
+                            <option value="3 signs.pdf"></option>
+                            <option value="Crystal clear Bags and Boxes posters_for print.pdf"></option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="request-new-poster" style="display:none;">
+                    <h5>Design a New Poster</h5>
+                    
+                    <div class="ts-posters" id="poster-1">
+                        <h4>Show Poster</h4>
+                        <input type="radio" class="poster-orientation" name="poster-orientation-1" value="portrait" /><span class="rb-text">Portrait</span>
+                        <input type="radio" class="poster-orientation" name="poster-orientation-1" value="landscape" /><span class="rb-text">Landscape</span>
+                        <div>
+                            <label for="Top to Bottom Measurement">Top to Bottom Measurement</label>
+                            <textarea rows="1" type="text" name="poster" value="" title=""></textarea>
+                            <label for="Left to Right Measurement">Left to Right Measurement</label>
+                            <textarea rows="1" type="text" name="poster" value="" title=""></textarea>
+                            <label for="headline">Headline</label>
+                            <textarea rows="1" type="text" name="headline" title="headline"></textarea>
+                            <label for="tagline">Tagline</label>
+                            <textarea rows="1" type="text" name="tagline" title="tagline"></textarea>
+                            <label for="bodytext">Body Text</label>
+                            <textarea rows="3" type="text" name="bodycopy" title="bodycopy"></textarea>
+                            <label for="image sku">SKU's of Products to Include</label>
+                            <textarea rows="3" type="text" name="images" title="images"></textarea>
+                            <input type="radio" class="foam-board-type" name="Foam Board Type-1" value="foam board" /><span class="rb-text">Foam Board</span>
+                            <input type="radio" class="foam-board-type" name="Foam Board Type-1" value="gator board" /><span class="rb-text">Gator Board</span>
+                        </div>
+                    </div>
+                    <!-- end poster-1 -->
+
+                    <div class="addForm2 pos-button">
+                        <a class="add">+</a>
+                    </div>
+
+                    <div class="ts-posters Form2" style="display:none;">
+                        <h4>Additional Poster</h4>
+                        <input type="radio" class="poster-orientation" name="poster-orientation-1" value="portrait" /><span class="rb-text">Portrait</span>
+                        <input type="radio" class="poster-orientation" name="poster-orientation-1" value="landscape" /><span class="rb-text">Landscape</span>
+                        <div>
+                            <label for="Top to Bottom Measurement">Top to Bottom Measurement</label>
+                            <textarea rows="1" type="text" name="poster" value="" title=""></textarea>
+                            <label for="Left to Right Measurement">Left to Right Measurement</label>
+                            <textarea rows="1" type="text" name="poster" value="" title=""></textarea>
+                            <label for="headline">Headline</label>
+                            <textarea rows="1" type="text" name="headline" title="headline"></textarea>
+                            <label for="tagline">Tagline</label>
+                            <textarea rows="1" type="text" name="tagline" title="tagline"></textarea>
+                            <label for="bodytext">Body Text</label>
+                            <textarea rows="3" type="text" name="bodycopy" title="bodycopy"></textarea>
+                            <label for="image sku">SKU's of Products to Include</label>
+                            <textarea rows="3" type="text" name="images" title="images"></textarea>
+                        </div>
+                    </div>
+                    <!-- end ts-posters -->
+                </div>
+                <div style="clear:right;"></div>
+            </div>
+
+            <!-- end ts-sections -->
+
+
+
+            <div id="direction-section" class="section">
+                <h2>Art Direction</h2>
+                <label for="art-direction">Include Needed Art Direction</label>
+                <span id="ad"><textarea  rows="6" type="text" name="poster" value="" title="" ></textarea></span>
+            </div>
+
+            <div id="more-section" class="section">
+                <h2>More Details</h2>
+                <label for="art-direction">Include More Details</label>
+                <div id="ad">
+                    <textarea rows="6" type="text" name="poster" value="" title=""></textarea>
+                </div>
+            </div>
+            <button class="submit" type="submit" name="submit">Submit</button>
+            <!-- end ts-details -->
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- end form -->
+
+

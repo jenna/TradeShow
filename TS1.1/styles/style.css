@@ -1,0 +1,379 @@
+
+    /*  Layout  */
+
+    #tsf-container {
+
+        width: 340px;
+
+        padding: 5px 0;
+
+        font-family: open sans, sans-serif;
+
+        margin: 0 auto;
+
+    }
+
+    #tsf-container textarea,
+
+    #tsf-container input[type="text"],
+
+    #tsf-container input[type="date"],
+
+    #tsf-container select {
+
+        display: block;
+
+        margin-bottom: 10px;
+
+        font: 16px sans-serif;
+
+        color: rgba(0, 0, 0, 0.8);
+
+        background-color: rgba(255, 255, 255, 0.6);
+
+        border: solid 1px rgba(0, 0, 0, 0.4);
+
+        width: 95%;
+
+        padding: 5px 2%;
+
+    }
+
+    .ts-sheets,
+
+    .ts-labels,
+
+    .ts-posters {
+
+        clear: both;
+
+        width: 95%;
+
+        margin: 0 auto;
+
+    }
+
+    #tsf-container input.poster-orientation,
+
+    #tsf-container input.foam-board-type {
+
+        display: inline;
+
+        margin: 5px 5px 10px;
+
+    }
+
+
+    /* Interactions */
+
+    a:link {
+
+        text-decoration: none;
+
+    }
+
+    a:hover {
+
+        cursor: pointer;
+
+    }
+
+    .pos-button {
+
+        float: right;
+
+        margin: 10px 10px 15px 0;
+
+    }
+
+    a.add {
+
+        text-align: center;
+
+        font-size: 20px;
+
+        padding: 0 7px;
+
+        border: solid 1px #a2e061;
+
+        color: #000;
+
+    }
+
+    a.add:hover {
+
+        background: rgba(0, 225, 0, 0.5);
+
+        color: #fff;
+
+    }
+
+    hr {
+
+        padding: 0;
+
+        border: none;
+
+        border-top: medium double #333;
+
+        color: #333;
+
+        margin-bottom: 30px;
+
+    }
+
+    .poster-option {
+
+        width: 300px;
+
+        margin: 0 auto;
+
+        padding-top: 10px;
+
+        padding-bottom: 10px;
+
+        text-align: center;
+
+        border-top: solid 1px rgba(0, 0, 0, 0.5);
+
+        border-right: solid 1px rgba(0, 0, 0, 0.5);
+
+        border-left: solid 1px rgba(0, 0, 0, 0.5);
+
+        font-size: 13px;
+
+    }
+
+    .poster-option:nth-child(2) {
+
+        border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .request-new-poster {
+
+        clear: right;
+
+    }
+
+    .Form2 {
+
+        clear: right;
+
+    }
+
+    /*   Typography  */
+
+    #tsf-container h1,
+
+    #tsf-container h2,
+
+    #tsf-container h3 {
+
+        text-align: center;
+
+    }
+
+    #tsf-container h1 {
+
+        font-size: 30px;
+
+        color: rgba(0, 0, 0, 0.65);
+
+        font-weight: 300;
+
+        /*        margin:10px;        */
+
+    }
+
+    #tsf-container h1 small {
+
+        font-size: 77%;
+
+    }
+
+    #tsf-container h2 {
+
+        font-weight: 700;
+
+        font-size: 24px;
+
+        color: rgba(0, 0, 0, 0.6);
+
+        border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+
+        padding: 6px 10px;
+
+        margin-bottom: 20px;
+
+    }
+
+    #tsf-container h3 {
+
+        font-weight: 800;
+
+        font-size: 20px;
+
+        color: rgba(237, 52, 41, 0.8);
+
+        border-bottom: solid 3px rgba(237, 52, 41, 0.8);
+
+        padding-bottom: 5px;
+
+    }
+
+    #tsf-container h4 {
+
+        font-weight: 700;
+
+        font-size: 16px;
+
+        color: rgba(0, 0, 0, 0.6);
+
+        border-bottom: dotted 1px black;
+
+        margin-bottom: 13px;
+
+        margin-top: 30px;
+
+        text-transform: uppercase;
+
+    }
+
+    #tsf-container h5 {
+
+        font-weight: 500;
+
+        font-size: 16px;
+
+        color: rgba(237, 52, 41, 0.7);
+
+        text-align: center;
+
+        padding-bottom: 3px;
+
+        border-bottom: solid 1px rgba(237, 52, 41, 0.6);
+
+    }
+
+    #tsf-container p {
+
+        font-size: 14px;
+
+        font-weight: 500;
+
+        color: rgba(0, 0, 0, 0.5);
+
+        margin: 0 10px 20px;
+
+    }
+
+    #tsf-container label,
+
+    .rb-text {
+
+        font: bold italic 12px georgia, serif;
+
+        color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    /*  Form  */
+
+    #tsf-container textarea[type="text"]:focus,
+
+    #tsf-container input[type="text"]:focus {
+
+        background-color: #6d6e70;
+
+        color: #fff;
+
+    }
+
+    #tsf-container .submit {
+
+        padding: 10px 70px;
+
+        border: solid 1px #a2e061;
+
+        margin: 25px 85px 10px;
+
+        color: #000;
+
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    #tsf-container .submit:hover {
+
+        background-color: rgba(0, 255, 0, 0.5);
+
+        color: #fff;
+
+        cursor: pointer;
+
+    }
+
+    .access-section {
+
+        font-size: 14px;
+
+        color: rgba(0, 0, 0, 0.8);
+
+        padding: 10px 0;
+
+        text-align: center;
+
+        border-bottom: solid 1px rgba(237, 52, 41, 1);
+
+    }
+
+    .access-section:hover,
+
+    .active {
+
+        background-color: rgba(237, 52, 41, 1);
+
+        color: rgba(255, 255, 255, 0.95);
+
+        cursor: pointer;
+
+    }
+
+    .form-section {
+
+        display: none;
+
+        background-color: rgba(255, 255, 255, 0.5);
+
+        margin-top: 10px;
+
+        padding-bottom: 20px;
+
+    }
+
+    .section {
+
+        padding-bottom: 20px;
+
+    }
+
+    #poster-buttons {
+
+        margin-bottom: 40px;
+
+    }
+
+    #poster-button-a,
+
+    #poster-button-b {
+
+        cursor: pointer;
+
+    }
+
+    #ap {
+
+        margin-bottom: 40px;
+
+    }
